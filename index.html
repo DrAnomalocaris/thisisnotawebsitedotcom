@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>△</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👁️</text></svg>"/>
+        <link rel="stylesheet" href="_bridgetown/static/index.BGRVVU32.css"/>
+        <script>
+            window.plausible = window.plausible || function() {
+                (window.plausible.q = window.plausible.q || []).push(arguments)
+            }
+        </script>
+        <meta name="robots" content="noindex"/>
+    </head>
+    <body class="default  bg-black">
+        <main>
+            <div id="desk_frame" class="part-of-ui relative flex items-center justify-center w-[200vw] sm:w-screen sm:min-h-dvh overflow-hidden text-white/90 print:hidden" data-controller="secrets">
+                <form id="desk_form" class="part-of-ui container relative items-center justify-center aspect-video max-w-6xl animate-fade-slow" autocomplete="off" spellcheck="false" data-action="secrets#submit:prevent">
+                    <h1 class="absolute bottom-1 sm:bottom-2 left-3 sm:left-6 z-[60]">
+                        <a href="https://www.barnesandnoble.com/w/the-book-of-bill-alex-hirsch/1144490969" target="_blank" class="text-white !opacity-0 opacity-[0.05] hover:opacity-75 font-bold text-xs sm:text-sm font-sans transition-all duration-150" data-secrets-target="title">THE BOOK OF BILL</a>
+                    </h1>
+                    <noscript class="absolute flex items-center justify-center z-[1000] bg-black top-0 right-0 left-0 bottom-0">
+                        <span class="font-mono text-glow text-2xl">JAVASCRIPT REQUIRED</span>
+                    </noscript>
+
+                    <div id="loader" class="part-of-ui absolute flex items-center justify-center top-0 right-0 left-0 bottom-0 opacity-0 pointer-events-none z-50 transition-all duration-500 bg-black/50" data-secrets-target="loader">
+                        <span class="w-24 h-24 leading-[80px] text-center align-middle text-6xl text-white animate-spin duration-500 font-mono">△</span>
+                    </div>
+                    <!-- The screen overlay div -->
+                    <div id="screen_overlay" class="part-of-ui absolute top-0 right-0 left-0 bottom-0 pointer-events-none z-30 scale-[1.015] brightness-[1.35] saturate-[1.35] transition-all duration-150" data-secrets-target="screenOverlay" style="z-index: 30;border-color: red;">
+                        <img src="assets/screen-overlay.png" aria-hidden="true"/>
+                    </div>
+                    
+                    
+                    <div id="screen_error" class="part-of-ui absolute top-0 right-0 left-0 bottom-0 opacity-0 pointer-events-none z-20" data-secrets-target="badOverlay">
+                        <img src="assets/screen-x.png" aria-hidden="true"/>
+                    </div>
+                    <!-- The video element you want to replace with the uploaded image -->
+                    <img id="screen_static" src="assets/img.png" class="part-of-ui absolute w-[20.5%] top-[14%] left-[22.25%] object-cover z-20 transition-all duration-150 aspect-square" aria-hidden="true" data-secrets-target="screenStatic"/>
+
+                    <div id="screen_text" class="part-of-ui absolute flex items-center justify-center w-[20.5%] top-[14%] left-[22.25%] aspect-square text-center px-4 bg-black/90 opacity-0 pointer-events-none transition-opacity duration-150 z-20 text-white text-glow font-mono text-xs leading-tight sm:text-sm md:text-base overflow-hidden" data-secrets-target="screenText"></div>
+                    <video id="screen" 
+                            class="part-of-ui absolute w-[20.5%] top-[14%] left-[22.25%] object-cover z-20 transition-all duration-150 opacity-0 aspect-square" 
+                            aria-hidden="true" 
+                            playsinline 
+                            disablePictureInPicture 
+                            data-secrets-target="screen" 
+                            data-action="ended->secrets#videoEnded"
+                            style="background-color: black; object-fit: cover;">
+                        <source src="assets/static-1.mp4" type="video/mp4" data-secrets-target="screenSource"/>
+                    </video>
+                    <video id="desk1" class="part-of-ui absolute top-0 right-0 left-0 bottom-0 object-contain pointer-events-none scale-[1.014]" alt="A desk..." aria-hidden="true" loop autoplay muted playsinline disablePictureInPicture preload="auto" data-secrets-target="video1" data-action="loadeddata->secrets#loaded1 ended->secrets#videoLoop">
+                        <source src="assets/bg-noflash.mp4" type="video/mp4"/>
+                    </video>
+                    <video id="desk2" class="part-of-ui absolute top-0 right-0 left-0 bottom-0 object-contain pointer-events-none hidden z-10 scale-[1.014]" alt="A desk... (lightning flash!)" aria-hidden="true" muted playsinline disablePictureInPicture preload="auto" data-secrets-target="video2" data-action="loadeddata->secrets#loaded2">
+                        <source src="assets/bg-flash.mp4" type="video/mp4"/>
+                    </video>
+                    <div id="button" class="part-of-ui absolute top-[3px] right-[1px] left-[-1px] bottom-0 opacity-10 pointer-events-none z-20 transition-all duration-75 [&.hovered]:opacity-50 [&.pressed]:opacity-100 [&.occupied]:animate-throb [&.disabled]:opacity-100 [&.disabled]:grayscale" data-secrets-target="buttonOverlay">
+                        <img src="assets/button.png" aria-hidden="true"/>
+                    </div>
+                    <div id="shadow_inner" class="part-of-ui shadow-darker absolute top-0 right-0 left-0 bottom-0 z-50 pointer-events-none transition-all duration-300" data-secrets-target="shadow"></div>
+                    <div id="shadow_outer" class="part-of-ui shadow-frame absolute top-[2px] right-[2px] left-[2px] bottom-[2px] z-50 pointer-events-none"></div>
+                    <input name="code" type="text" class="part-of-ui absolute bottom-[26.2%] left-[25.5%] w-[16.5%] h-[7%] bg-transparent text-white text-glow pl-[1%] pr-[3%] outline-none font-mono uppercase z-40 [&.loading]:animate-loading disabled:animate-loading disabled:cursor-not-allowed" value="" data-secrets-target="field" data-action="input->secrets#inputUpdate keydown.esc->secrets#clearForm:prevent"/>
+
+                    <!-- Hidden File Input for uploading new images -->
+                    <input type="file" id="fileInput" accept="image/*" style="display: none;" />
+
+                    <!-- Submit Button to trigger file input -->
+                    <input name="submit" type="submit" id="submitButton" class="part-of-ui absolute bottom-[18.5%] left-[36%] w-[6%] h-[6%] cursor-pointer z-40 text-transparent disabled:cursor-not-allowed" value="GO" data-secrets-target="button" data-action="mouseover->secrets#hoverButton mouseout->secrets#unhoverButton mousedown->secrets#pressButton mousemove->secrets#unpressButton onfocusout->secrets#unpressButton"/>
+
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
+<script>
+    // Get the elements
+    const submitButton = document.getElementById('submitButton');
+    const fileInput = document.getElementById('fileInput');
+    const imageElement = document.getElementById('screen_static');
+
+    // Add click event listener to the submit button
+    submitButton.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent the form from submitting
+        fileInput.click(); // Trigger the hidden file input
+    });
+
+    // Handle the file selection
+    fileInput.addEventListener('change', (event) => {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                // Update the src of the image element
+                imageElement.src = e.target.result;
+                
+                // Ensure the updated image has a z-index of 1
+                imageElement.style.zIndex = '1';
+                imageElement.style.backgroundColor = 'black'; // Set background color to black
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+</script>
